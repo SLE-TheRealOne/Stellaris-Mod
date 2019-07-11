@@ -1,0 +1,121 @@
+orbital_ai_enhancer = {
+	icon = "GFX_orbital_ai_enhancer"
+	construction_days = 360
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+		has_starbase_module = orbital_administration
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 1000
+			minerals = 1000
+			energy = 1000
+			unity = 1000
+			influence = 30
+			sr_living_metal = 3
+		}
+		
+		upkeep = {
+			energy = 30
+			unity = 30
+		}
+	}
+	
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = orbital_administration
+				count >= 1
+			}
+			count_starbase_modules = {
+				type = orbital_administration
+				count < 2
+			}			
+		}
+		
+		country_admin_cap_add = 1
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = orbital_administration
+				count >= 2
+			}
+			count_starbase_modules = {
+				type = orbital_administration
+				count < 3
+			}			
+		}
+		
+		country_admin_cap_add = 2
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = orbital_administration
+				count >= 3
+			}
+			count_starbase_modules = {
+				type = orbital_administration
+				count < 4
+			}		
+		}
+		
+		country_admin_cap_add = 3
+	}	
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = orbital_administration
+				count >= 4
+			}
+			count_starbase_modules = {
+				type = orbital_administration
+				count < 5
+			}			
+		}
+		
+		country_admin_cap_add = 4
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = orbital_administration
+				count >= 5
+			}
+			count_starbase_modules = {
+				type = orbital_administration
+				count < 6
+			}			
+		}
+		
+		country_admin_cap_add = 5
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = orbital_administration
+				count >= 6
+			}
+		}
+		
+		country_admin_cap_add = 6
+	}
+
+	custom_tooltip = sm_orbital_ai_enhancer_desc_tooltip
+	
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+}

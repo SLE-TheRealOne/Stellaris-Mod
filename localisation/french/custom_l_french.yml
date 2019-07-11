@@ -1,0 +1,6 @@
+﻿l_french:
+ sm_orbital_administration:0 "Administration en orbite"
+ sm_orbital_administration_desc:0 "Externaliser une partie de l'administration en orbite permet de faciliter les transits inter-systèmes et inter-espèces ainsi que de faciliter les démarches liées au commerce et à l'immigration"
+ sm_orbital_ai_enhancer:0 "IA de centralisation"
+ sm_orbital_ai_enhancer_desc:0 "La quantité quasi infinie de données nécessaires à une synchronisation administrative à l'échelle galactique nécessite une IA dédiée"
+ sm_orbital_ai_enhancer_desc_tooltip:0 "Ajoute 1 à la §BCapacité administrative par palier de 2 §H'Administration en orbite'

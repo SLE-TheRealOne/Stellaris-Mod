@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_orbital_administration"
+		texturefile = "gfx/interface/icons/modules/orbital_administration.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_orbital_ai_enhancer"
+		texturefile = "gfx/interface/icons/modules/orbital_ai_enhancer.dds"
+	}
+}
