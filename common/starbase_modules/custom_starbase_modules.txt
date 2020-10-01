@@ -1,34 +1,143 @@
-orbital_administration = {
+# orbital_administration_1
+orbital_administration_1 = {
 	icon = "GFX_orbital_administration"
 	section = "ANCHORAGE_STARBASE_SECTION"
 	construction_days = 180
 
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starhold"
-			has_starbase_size >= starbase_starhold
+    potential = {
+        has_starbase_size >= starbase_starport
+    }
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+			energy = 100
+			influence = 1
+		}
+
+		upkeep = {
+			energy = 1
 		}
 	}
+
+	country_modifier = {
+        country_admin_cap_add = 2
+    }
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+}
+
+# orbital_administration_2
+orbital_administration_2 = {
+	icon = "GFX_orbital_administration"
+	section = "ANCHORAGE_STARBASE_SECTION"
+	construction_days = 180
+
+    potential = {
+        count_starbase_modules = {
+            type = orbital_administration_1
+            count > 0
+        }
+    }
+
+    possible = {
+        has_starbase_size >= starbase_starhold
+    }
 
 	resources = {
 		category = starbase_modules
 		cost = {
 			alloys = 100
-			minerals = 100
-			energy = 100
-			unity = 100
-			influence = 10
-			sr_living_metal = 1
+			energy = 150
+			influence = 2
 		}
 
 		upkeep = {
-			energy = 10
+			energy = 2
 		}
 	}
 
-	country_modifier = {
-		country_admin_cap_add = 2
+    country_modifier = {
+        country_admin_cap_add = 3
+    }
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+}
+
+# orbital_administration_3
+orbital_administration_3 = {
+	icon = "GFX_orbital_administration"
+	section = "ANCHORAGE_STARBASE_SECTION"
+	construction_days = 180
+
+    potential = {
+        count_starbase_modules = {
+            type = orbital_administration_2
+            count > 0
+        }
+    }
+
+    possible = {
+        has_starbase_size >= starbase_starfortress
+    }
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 150
+			energy = 200
+			influence = 2
+		}
+
+		upkeep = {
+			energy = 4
+		}
 	}
+
+    country_modifier = {
+        country_admin_cap_add = 4
+    }
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+}
+
+# orbital_administration_4
+orbital_administration_4 = {
+	icon = "GFX_orbital_administration"
+	section = "ANCHORAGE_STARBASE_SECTION"
+	construction_days = 180
+
+    potential = {
+        count_starbase_modules = {
+            type = orbital_administration_3
+            count > 0
+        }
+    }
+
+    possible = {
+        has_starbase_size >= starbase_citadel
+    }
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 200
+			energy = 400
+			influence = 3
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+    country_modifier = {
+        country_admin_cap_add = 5
+    }
 
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes

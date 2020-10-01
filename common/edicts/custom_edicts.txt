@@ -1,0 +1,30 @@
+administration_additional_subvention = {
+    length = 365
+
+    resources = {
+        category = campaigns
+        cost = {
+            energy = 1000
+            influence = 25
+        }
+    }
+
+    allow = {
+        AND = {
+            every_owned_planet = {
+                planet_stability > 60
+                planet_crime < 20
+            }
+            capital_scope = {
+                AND = {
+                    planet_stability > 70
+                    planet_crime < 10
+                }
+            }
+        }
+    }
+
+    modifier = {
+        country_admin_cap_mult = 0.10
+    }
+}
