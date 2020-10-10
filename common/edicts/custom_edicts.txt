@@ -1,26 +1,18 @@
 administration_additional_subvention = {
-    length = 365
+    length = 3600
+    icon = "GFX_edict_type_time"
 
     resources = {
-        category = campaigns
+        category = rare_edicts
         cost = {
             energy = 1000
-            influence = 25
         }
     }
 
     allow = {
-        AND = {
-            every_owned_planet = {
-                planet_stability > 60
-                planet_crime < 20
-            }
-            capital_scope = {
-                AND = {
-                    planet_stability > 70
-                    planet_crime < 10
-                }
-            }
+        capital_scope = {
+            planet_stability > 75
+            planet_crime < 7
         }
     }
 

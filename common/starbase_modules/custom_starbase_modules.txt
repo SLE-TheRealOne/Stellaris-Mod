@@ -36,9 +36,11 @@ orbital_administration_2 = {
 	construction_days = 180
 
     potential = {
-        count_starbase_modules = {
-            type = orbital_administration_1
-            count > 0
+        OR = {
+            count_starbase_modules = {
+                type = orbital_administration_1
+                count > 0
+            }
         }
     }
 
@@ -74,9 +76,15 @@ orbital_administration_3 = {
 	construction_days = 180
 
     potential = {
-        count_starbase_modules = {
-            type = orbital_administration_2
-            count > 0
+        OR = {
+            count_starbase_modules = {
+                type = orbital_administration_1
+                count > 0
+            }
+            count_starbase_modules = {
+                type = orbital_administration_2
+                count > 0
+            }
         }
     }
 
@@ -111,12 +119,22 @@ orbital_administration_4 = {
 	section = "ANCHORAGE_STARBASE_SECTION"
 	construction_days = 180
 
-    potential = {
-        count_starbase_modules = {
-            type = orbital_administration_3
-            count > 0
+     potential = {
+        OR = {
+            count_starbase_modules = {
+                type = orbital_administration_1
+                count > 0
+            }
+            count_starbase_modules = {
+                type = orbital_administration_2
+                count > 0
+            }
+            count_starbase_modules = {
+                type = orbital_administration_3
+                count > 0
+            }
         }
-    }
+     }
 
     possible = {
         has_starbase_size >= starbase_citadel

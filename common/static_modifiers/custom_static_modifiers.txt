@@ -1,0 +1,5 @@
+boost_annual_research_modifier = {
+    planet_jobs_engineering_research_produces_mult = 0.15
+    planet_jobs_physics_research_produces_mult = 0.15
+    planet_jobs_society_research_produces_mult = 0.15
+}

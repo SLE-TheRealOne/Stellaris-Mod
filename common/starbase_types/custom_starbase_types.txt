@@ -1,0 +1,132 @@
+starbase_type_orbital_administration = {
+	potential = {
+		has_starbase_size > starbase_outpost
+		OR = {
+            count_starbase_modules = {
+                type = orbital_administration_1
+                count > 0
+            }
+            count_starbase_modules = {
+                type = orbital_administration_2
+                count > 0
+            }
+            count_starbase_modules = {
+                type = orbital_administration_3
+                count > 0
+            }
+            count_starbase_modules = {
+                type = orbital_administration_4
+                count > 0
+            }
+		}
+	}
+
+	weight_modifier = {
+		base = 100
+		modifier = {
+			add = 100
+			OR = {
+                count_starbase_modules = {
+                    type = orbital_administration_1
+                    count > 1
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_2
+                    count > 1
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_3
+                    count > 1
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_4
+                    count > 1
+                }
+            }
+		}
+		modifier = {
+			add = 100
+            OR = {
+                count_starbase_modules = {
+                    type = orbital_administration_1
+                    count > 2
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_2
+                    count > 2
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_3
+                    count > 2
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_4
+                    count > 2
+                }
+		    }
+		}
+		modifier = {
+			add = 100
+			OR = {
+                count_starbase_modules = {
+                    type = orbital_administration_1
+                    count > 3
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_2
+                    count > 3
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_3
+                    count > 3
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_4
+                    count > 3
+                }
+            }
+		}
+		modifier = {
+			add = 100
+			OR = {
+                count_starbase_modules = {
+                    type = orbital_administration_1
+                    count > 4
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_2
+                    count > 4
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_3
+                    count > 4
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_4
+                    count > 4
+                }
+            }
+		}
+		modifier = {
+			add = 100
+			OR = {
+                count_starbase_modules = {
+                    type = orbital_administration_1
+                    count > 5
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_2
+                    count > 5
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_3
+                    count > 5
+                }
+                count_starbase_modules = {
+                    type = orbital_administration_4
+                    count > 5
+                }
+            }
+		}
+	}
+}

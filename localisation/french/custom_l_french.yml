@@ -13,3 +13,10 @@
 
  edict_administration_additional_subvention: "Crédits additionels alloués à l'administration"
  edict_administration_additional_subvention_desc: "L'art de la torture est administratif"
+
+ boost_annual_research: "Attribuer des assitants de recherche"
+ boost_annual_research_desc: "Supportons les chercheurs en leur attribuant des assitants : laborantins, jeunes dipômés, ingénieurs ou scientifiques d'autres domaines. Ils pourront ainsi se libérer de cetaines tâches à faible valeure ajoutée"
+
+ boost_annual_research_modifier: "Assitants de recherche"
+
+ starbase_type_orbital_administration: "Administrations orbitales"
